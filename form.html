@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Maquette Figma</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+	<div>
+		
+		<section class="todoSection">
+
+			<h1>React To-Do List</h1>
+
+			<form action="" class="todoForm">
+				<div>
+
+					<h2>Add a new to-do :</h2>
+
+					<label for="task">Name : </label>
+					<input type="text" name="task" id="task" placeholder="name for the task you’re going to do"><br>
+
+					<label for="description">Description :</label>
+					<textarea name="description" id="description"></textarea><br>
+
+					<label for="category">Category :</label>
+					<input type="text" name="category" id="category"><br>
+
+					<label for="when">Date :</label>
+					<input type="date" name="when" id="when"><br>
+
+					<label for="Time">Time :</label>
+					<input type="time" name="time" id="time"><br>
+				</div>
+
+				<div class="formDiv2">
+					<label for="priority">Priority :</label>
+					<select name="priority" class="priority" id="priority">
+						<option value="Easy">Easy</option>
+						<option value="Medium">Medium</option>
+						<option value="High">High</option>
+					</select><br>
+
+					<label for="fulfillment">Fulfillment :</label>
+					<input type="range" name="fulfillment" id="fulfillment" min="0" max="100" step="10" value="0">
+					<!-- <span id="progress-value">0%</span> <br> -->
+
+					<button type="submit" class="save">Save</button>
+					<button type="reset" class="removeLS">Cancel</button>
+				</div>
+				
+			</form>
+
+		</section>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Maquette Figma</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+	<div>
+		
+		<section class="todoSection">
+
+			<h1>React To-Do List</h1>
+
+			<div class="todoDiv">
+				<button class="addTodo">
+					<a href="./form.html">Add a new todo</a>
+				</button>
+				<button class="todOption active" id="todOption" data-filter="all">All</button>
+				<button class="todOption" data-filter="todo">Todo</button>
+				<button class="todOption" data-filter="completed">Completed</button>
+			</div>
+
+				<table align="center">
+					<thead>
+						<tr class=".thTable">
+							<th>Task</th>
+							<th>Description</th>
+							<th>Category</th>
+							<th>When</th>
+							<th>Priority</th>
+							<th>Fulfillment</th>
+						</tr>
+					</thead>
+					<tbody class="container">
+						
+					</tbody>
+				</table>
+
+				<template class="item-template">
+					<tr class="item">
+						<td class="item-task"></td>
+						<td class="item-description"></td>
+						<td class="item-category"></td>
+						<td class="item-when"></td>
+						<!-- <td class="item-time"></td> -->
+						<td class="item-priority"></td>
+						<td class="item-fulfillment"></td>
+						<td class="item-button">
+							<div>
+								<img class="update" src="update.png">
+								<img class="deleteTr" src="delete.png">
+							</div>
+						</td>
+					</tr>
+				</template>
+
+		</section>
+
+		<!-- <button class="removeLS">LS</button> -->
+
+	</div>
+</body>
+</html>
